@@ -27,10 +27,16 @@ To set up the project on your local machine, follow these steps:
    cd Student-database
 
 2. **to create a virtual env**:
+
+   ```sh
    python -m venv venv
 3. ** to activate**:
+
+   ```sh
    source venv/bin/activate or venv\Scripts\activate
 4. **dependencies**
+
+   ```sh
    pip install -r requirements.txt
 5. **setup**
    flask db upgrade  and then run at flask run.
