@@ -40,5 +40,9 @@ To set up the project on your local machine, follow these steps:
    pip install -r requirements.txt
 5. **setup**
    flask db upgrade  and then run at flask run.
+6. **run**
+
+   ```sh
+   python app.py
 
    **The application will be available at http://127.0.0.1:5000/.**
