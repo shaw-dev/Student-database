@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Add a New Student</h1>
+<form method="POST" class="mb-3">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        {{ form.name.label(class="form-label") }}
+        {{ form.name(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.age.label(class="form-label") }}
+        {{ form.age(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.major.label(class="form-label") }}
+        {{ form.major(class="form-control") }}
+    </div>
+    <button type="submit" class="btn btn-primary">{{ form.submit.label.text }}</button>
+</form>
+<a href="{{ url_for('main.index') }}" class="btn btn-secondary">Back to Student List</a>
+{% endblock %}
